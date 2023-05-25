@@ -1,5 +1,15 @@
-controllers:
-    resource:
-        path: ../src/Controller/
-        namespace: App\Controller
-    type: attribute
+newUtilisateur:
+ path: /utilisateur/inscription
+ controller: App\Controller\UtilisateurController::ajouterUtilisateur
+
+utilisateur_list:
+  path: /utilisateur_list
+  controller: App\Controller\UtilisateurController::listeUtilisateurs
+
+newProject:
+ path: /projet/add
+ controller: App\Controller\UtilisateurController::ajouterProjet
+
+projet_list:
+  path: /projet_list
+  controller: App\Controller\UtilisateurController::listeProjets
